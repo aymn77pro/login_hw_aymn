@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
              R.id.login -> {
                 item.title = "Log out"
              }
+             R.id.counact_Us -> {
+                 val intent=Intent(this,contact_Us::class.java)
+                 startActivity(intent)
+             }
             else -> super.onOptionsItemSelected(item)
 
             }

@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 
-class setting : AppCompatActivity() {
+class contact_Us : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setting)
+        setContentView(R.layout.activity_contact_us)
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)
@@ -19,18 +19,15 @@ class setting : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.setting -> {
-                item.title = ""
-                val intent= Intent(this,MainActivity::class.java)
+                val intent= Intent(this,setting::class.java)
                 startActivity(intent)
-                item.title = "setting"
             }
             R.id.login -> {
                 item.title = "Log out"
             }
-            R.id.counact_Us -> {
-                val intent= Intent(this,contact_Us::class.java)
+            R.id.counact_Us ->{
+                val intent=Intent(this,MainActivity::class.java)
                 startActivity(intent)
-                item.title = "main activety"
             }
             else -> super.onOptionsItemSelected(item)
 
