@@ -17,6 +17,7 @@ class contact_Us : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        item.title="Main activity"
         when(item.itemId){
             R.id.setting -> {
                 val intent= Intent(this,setting::class.java)
