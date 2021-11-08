@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
              R.id.login -> {
-                item.title = "Log out"
+                 if (item.title=="aymn")item.title="logout" else item.title="aymn"
              }
              R.id.counact_Us -> {
                  val intent=Intent(this,contact_Us::class.java)
